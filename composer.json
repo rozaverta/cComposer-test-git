@@ -1,0 +1,25 @@
+{
+    "name": "rozaverta/composer-test-git",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "goshav",
+            "email": "gosha@rozaverta.com"
+        }
+    ],
+    "scripts": {
+        "post-package-install": "EApp\\System\\TerminalScriptListener::postPackageInstall",
+        "post-package-update": "EApp\\System\\TerminalScriptListener::postPackageUpdate",
+        "post-package-uninstall": "EApp\\System\\TerminalScriptListener::postPackageUninstall"
+    },
+    "require": {
+        "php": ">=7.0",
+        "rozaverta/cmf": "0.0.1-beta"
+    },
+    "autoload": {
+        "psr-4": {
+            "RozaVerta\\ComposerTestGit\\": "src/RozaVerta/ComposerTestGit/"
+        }
+    }
+}
