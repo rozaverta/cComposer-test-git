@@ -11,7 +11,8 @@
     "scripts": {
         "post-package-install": "EApp\\System\\TerminalScriptListener::postPackageInstall",
         "post-package-update": [
-            "EApp\\System\\TerminalScriptListener::postPackageUpdate"
+            "EApp\\System\\TerminalScriptListener::postPackageUpdate",
+            "RozaVerta\\ComposerTestGit::update"
         ],
         "post-package-uninstall": "EApp\\System\\TerminalScriptListener::postPackageUninstall"
     },
