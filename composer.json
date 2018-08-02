@@ -10,7 +10,9 @@
     ],
     "scripts": {
         "post-package-install": "EApp\\System\\TerminalScriptListener::postPackageInstall",
-        "post-package-update": "EApp\\System\\TerminalScriptListener::postPackageUpdate",
+        "post-package-update": [
+            "EApp\\System\\TerminalScriptListener::postPackageUpdate"
+        ],
         "post-package-uninstall": "EApp\\System\\TerminalScriptListener::postPackageUninstall"
     },
     "require": {
